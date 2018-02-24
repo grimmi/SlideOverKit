@@ -84,6 +84,10 @@ namespace SlideOverKit.iOS
         {
             if (!CheckPageAndMenu ())
                 return;
+
+            if (!_basePage.ShowBackgroundOverlay)
+                return;
+
             nfloat value = (nfloat)(alpha * _basePage.SlideMenu.BackgroundViewColor.A);
             if (_backgroundOverlay != null) {
                 _backgroundOverlay.BackgroundColor = _basePage.SlideMenu.BackgroundViewColor.ToUIColor ().ColorWithAlpha (value);

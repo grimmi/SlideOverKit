@@ -9,6 +9,8 @@ namespace SlideOverKit
         Action ShowMenuAction { get; set; }
 
         Action HideMenuAction { get; set; }
+
+        bool ShowBackgroundOverlay { get; set; }
     }
 }
 

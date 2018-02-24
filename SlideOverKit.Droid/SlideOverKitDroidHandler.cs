@@ -232,6 +232,10 @@ namespace SlideOverKit.Droid
         {
             if (_basePage == null)
                 return;
+
+            if (!_basePage.ShowBackgroundOverlay)
+                return;
+
             var menu = _basePage.SlideMenu;
             if (menu == null)
                 return;
